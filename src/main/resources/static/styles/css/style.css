@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F0FFF0;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+.container {
+    width: 600px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.todos {
+    margin-top: 30px;
+}
+
+.todo {
+    background-color: #FFF;
+    box-shadow: 0px 0px 5px lightgray;
+    border-radius: 10px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 560px) {
+    .todo {
+        display: block;
+    }
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 3rem;
+    margin: 40px 0px;
+}
+
+.btn-edit {
+    background-color: #1589FF;
+}
+
+.btn-delete {
+    background-color: #E55451;
+}
+
+.btn-green {
+    background-color: #4CC552;
+}
+
+
+.todo div p {
+    margin-bottom: 20px;
+}
+
+p span {
+    font-weight: 700;
+}
+
+form {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.field {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.field label {
+    font-weight: 700;
+    flex-basis: 120px;
+}
+
+.field input {
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    height: 30px;
+    width: 80%;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.field select {
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    height: 30px;
+    width: 40%;
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px gray;
+}
